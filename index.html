@@ -3,9 +3,7 @@
 <head>
  <meta charset="utf-8">
  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-<!-- Include the jQuery library -->
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<!-- Include the jQuery Mobile library -->
 <script src="script/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
@@ -16,7 +14,7 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <form method="post" action="#pagetwo">
+    <form>
       <div class="ui-field-contain">
 
         <label for="nombre">Nombre:</label>
@@ -25,28 +23,151 @@
         <label for="password">Contraseña:</label>
         <input name="password" id="password" value="" autocomplete="off" type="password">
       </div>
-       <a data-role="button" href="#pagetwo" data-icon="check" data-iconpos="right" >Continuar</a>
+       <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Login</a>
     </form>
   </div>
+
 </div>
 
 
 
 
-<div data-role="page" id="pagetwo">
-  <div data-role="header">
-    <h1>Buttons</h1>
+ <div data-role="page" id="curso" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="curso" tabindex="0" >
+    <!-- Cabecera -->
+    <header data-role="header" >
+        <h2>Lista de cursos</h2>
+    </header>
+    
+ <div data-role="main" class="ui-content" >
+   
+    <div data-corners="true">
+         
+        <ul data-role="listview" data-filter="true" >
+            <li><a href="#ComercioYmarqueting">Comercio y Marketing</a></li>
+            <li><a href="#ImagenySonido">Imagen y Sonido</a></li>
+            <li><a href="#InformaticayComunicaciones">Informática y Comunicaciones</a></li>
+
+        </ul>
+
+    </div>
+    <br/>
+    <a data-role="button" href="#pageone" data-icon="check" data-iconpos="right">Atras</a>
+  </div>
+</div>
+
+  <div data-role="page" id="#ComercioYmarqueting" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ComercioYmarqueting" tabindex="0">
+    <!-- Cabecera -->
+    <header data-role="header" >
+       <h2>Comercio Y marqueting</h2>
+    </header>
+    
+ <div data-role="main" class="ui-content">
+   
+    <div  data-corners="false" data-theme="b" data-content-theme="b">
+     
+    
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="#alumnos">Actividades Comerciales</a></li>
+            <li><a href="#alumnos">Comercio</a></li>
+            <li><a href="#alumnos">Comercio Internacional</a></li>
+             <li><a href="#alumnos">Gestión de ventas y espacios comerciales</a></li>
+            <li><a href="#alumnos">Transporte y Logística</a></li>
+        </ul>
+    
+
+    </div>
+    <br/>
+    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
+  </div>
   </div>
 
-  <div data-role="main" class="ui-content">
-    <p>Goodbye!</p>
-    <a href="#pageone" class="ui-btn">Go to Page One</a>
+   <div data-role="page" id="#ImagenySonido" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ImagenySonido" tabindex="0">
+    <!-- Cabecera -->
+    <header data-role="header" >
+        <h2>Imagen y Sonido</h2>
+    </header>
+    
+ <div data-role="main" class="ui-content">
+   
+    <div  data-corners="false" data-theme="b" data-content-theme="b">
+     
+    
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="#alumnos">Laboratorio de Imagen</a></li>
+            <li><a href="#alumnos">Video Disc-Jockey y Sonido</a></li>
+            <li><a href="#alumnos">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
+             <li><a href="index.php">ILuminación, Captación y Tratamiento de Imagen</a></li>
+            <li><a href="#alumnos">Producción de Audiovisuales y Espectáculos</a></li>
+             <li><a href="#alumnos">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
+
+        </ul>
+    
+
+    </div>
+     <br/>
+    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
+  </div>
   </div>
 
-  <div data-role="footer">
-    <h1>Footer Text</h1>
+
+   <div data-role="page" id="#InformaticayComunicaciones" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="InformaticayComunicaciones" tabindex="0" >
+    <!-- Cabecera -->
+    <header data-role="header" >
+        <h2>Informatica Comunicaciones</h2>
+    </header>
+    
+ <div data-role="main" class="ui-content">
+   
+    <div data-corners="false" data-theme="b" data-content-theme="b">
+     
+    
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="#alumnos">Sistemas Microinformáticos y Redes</a></li>
+            <li><a href="#alumnos">Administración de SIstemas Informáticos en Red</a></li>
+            <li><a href="#alumnos">Desarrollo de Aplicaciones Multiplataforma</a></li>
+            <li><a href="#alumnos">Desarrollo de Aplicaciones Web</a></li>
+        </ul>
+    
+
+    </div>
+     <br/>
+    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
   </div>
-</div> 
+  </div>
+
+
+
+   <div data-role="page" id="#alumnos" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="alumnos" tabindex="0" >
+    <!-- Cabecera -->
+    <header data-role="header" >
+        <h2>Lista de Alumnos</h2>
+    </header>
+    <div data-theme="a" data-content-theme="b">
+    <div >
+    
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+             <li><a href="index.php">pepe</a></li>
+        <li><a href="index.php">juan</a></li>
+        <li><a href="index.php">carla</a></li>
+        <li><a href="index.php">penelope</a></li>
+        <li><a href="index.php">Chrystofer</a></li>
+        <li><a href="index.php">daniel</a></li>
+        <li><a href="index.php">faviana</a></li>
+        <li><a href="index.php">fernando</a></li>
+        <li><a href="index.php">gabriel</a></li>
+        <li><a href="index.php">helena</a></li>
+        </ul>
+    </div>
+    
+ 
+    <br/>
+    <a data-role="button" href="#pageone" data-icon="check" data-iconpos="right">Atras</a>
+  </div>
+
+
+
+   
 
 </body>
+
 </html>
