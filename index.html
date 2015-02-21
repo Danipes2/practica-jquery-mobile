@@ -23,7 +23,7 @@
         <label for="password">Contraseña:</label>
         <input name="password" id="password" value="" autocomplete="off" type="password">
       </div>
-       <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Login</a>
+       <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-action">Login</a>
     </form>
   </div>
 
@@ -51,11 +51,11 @@
 
     </div>
     <br/>
-    <a data-role="button" href="#pageone" data-icon="check" data-iconpos="right">Atras</a>
+    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Atras</a>
   </div>
 </div>
 
-  <div data-role="page" id="#ComercioYmarqueting" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ComercioYmarqueting" tabindex="0">
+  <div data-role="page" id="ComercioYmarqueting" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ComercioYmarqueting" tabindex="0">
     <!-- Cabecera -->
     <header data-role="header" >
        <h2>Comercio Y marqueting</h2>
@@ -77,11 +77,12 @@
 
     </div>
     <br/>
-    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
+    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Atras</a>
+    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
   </div>
   </div>
 
-   <div data-role="page" id="#ImagenySonido" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ImagenySonido" tabindex="0">
+   <div data-role="page" id="ImagenySonido" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="ImagenySonido" tabindex="0">
     <!-- Cabecera -->
     <header data-role="header" >
         <h2>Imagen y Sonido</h2>
@@ -105,12 +106,13 @@
 
     </div>
      <br/>
-    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
+    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Atras</a>
+    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
   </div>
   </div>
 
 
-   <div data-role="page" id="#InformaticayComunicaciones" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="InformaticayComunicaciones" tabindex="0" >
+   <div data-role="page" id="InformaticayComunicaciones" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="InformaticayComunicaciones" tabindex="0" >
     <!-- Cabecera -->
     <header data-role="header" >
         <h2>Informatica Comunicaciones</h2>
@@ -131,13 +133,14 @@
 
     </div>
      <br/>
-    <a data-role="button" href="#curso" data-icon="check" data-iconpos="right">Atras</a>
+    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Atras</a>
+    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
   </div>
   </div>
 
 
 
-   <div data-role="page" id="#alumnos" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="alumnos" tabindex="0" >
+   <div data-role="page" id="alumnos" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="alumnos" tabindex="0" >
     <!-- Cabecera -->
     <header data-role="header" >
         <h2>Lista de Alumnos</h2>
@@ -147,26 +150,324 @@
     
         <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
              <li><a href="index.php">pepe</a></li>
-        <li><a href="index.php">juan</a></li>
-        <li><a href="index.php">carla</a></li>
-        <li><a href="index.php">penelope</a></li>
-        <li><a href="index.php">Chrystofer</a></li>
-        <li><a href="index.php">daniel</a></li>
-        <li><a href="index.php">faviana</a></li>
-        <li><a href="index.php">fernando</a></li>
-        <li><a href="index.php">gabriel</a></li>
-        <li><a href="index.php">helena</a></li>
+        <li><a href="#evaluar">juan</a></li>
+        <li><a href="#evaluar">carla</a></li>
+        <li><a href="#evaluar">penelope</a></li>
+        <li><a href="#evaluar">Chrystofer</a></li>
+        <li><a href="#evaluar">daniel</a></li>
+        <li><a href="#evaluar">faviana</a></li>
+        <li><a href="#evaluar">fernando</a></li>
+        <li><a href="#evaluar">gabriel</a></li>
+        <li><a href="#evaluar">helena</a></li>
         </ul>
     </div>
     
  
     <br/>
-    <a data-role="button" href="#pageone" data-icon="check" data-iconpos="right">Atras</a>
+    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Volver a cursos</a>
+    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
+    </div>
   </div>
 
 
 
-   
+<div data-role="page" id="evaluar" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="evaluar" tabindex="0">
+    <!-- Cabecera -->
+    <header data-role="header">
+        <h1>Criterios</h1>
+    </header>
+
+  <div class="wrap" data-role="content" id="evalua" class="box">
+          <div class="boxBody">
+              <div class="ui-field-contain">
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Entrada del alumno:</legend>
+                      <input name="radio-choice-h-1" id="radio-choice-h-1a" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-1a">Mala</label>
+                      <input name="radio-choice-h-1" id="radio-choice-h-4a" value="on" type="radio">
+                      <label for="radio-choice-h-4a">Regular</label>
+
+
+                       <input name="radio-choice-h-1" id="radio-choice-h-2a" value="on" type="radio">
+                      <label for="radio-choice-h-2a">Normal</label>
+
+                       <input name="radio-choice-h-1" id="radio-choice-h-3a" value="on" type="radio">
+                      <label for="radio-choice-h-3a">Bien</label>
+                      <input name="radio-choice-h-1" id="radio-choice-h-5a" value="on" type="radio">
+                      <label for="radio-choice-h-5a">Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Indumentaria:</legend>
+                      <input name="radio-choice-h-2" id="radio-choice-h-6" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-6">Mala</label>
+
+                      <input name="radio-choice-h-2" id="radio-choice-h-7" value="on"  type="radio">
+                      <label for="radio-choice-h-7">Regular</label>
+
+                       <input name="radio-choice-h-2" id="radio-choice-h-8" value="on" type="radio">
+                      <label for="radio-choice-h-8">Normal</label>
+
+                       <input name="radio-choice-h-2" id="radio-choice-h-9" value="on" type="radio">
+                      <label for="radio-choice-h-9">Bien</label>
+                       <input name="radio-choice-h-2" id="radio-choice-h-10" value="on" type="radio">
+                      <label for="radio-choice-h-10"> Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup">
+                      <legend>Introducción:</legend>
+                      <div class="ui-checkbox">
+                         <input name="checkbox-v-1" id="atractiva" type="checkbox">
+                          <label for="atractiva">¿Es atractiva?</label>
+                     </div>
+                     <div class="ui-checkbox">
+                         <input name="checkbox-v-2" id="claridad" type="checkbox">
+                          <label for="claridad">¿Queda claro el proyecto?</label>
+                     </div>
+                     <br/>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup">
+                      <legend>Desarrollo:</legend>
+                        
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-3" id="ordenideas" type="checkbox">
+                          <label for="ordenideas">Orden en las ideas</label>
+                     </div> 
+
+                      <div class="ui-checkbox">
+                         <input name="checkbox-v-4" id="claraexpo" type="checkbox">
+                          <label for="claraexpo">Claridad en la exposición</label>
+                     </div>
+
+                      <div class="ui-checkbox">
+                         <input name="checkbox-v-5" id="termitec" type="checkbox">
+                          <label for="termitec">Aclaración de términos técnicos</label>
+                     </div>
+                     <br/>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup">
+                      <legend>Conclusión:</legend>
+
+                      <div class="ui-checkbox">
+                         <input name="checkbox-v-6" id="objetivoclaro" type="checkbox">
+                          <label for="objetivoclaro">¿Queda claro el objetivo del proyecto?</label>
+                     </div>
+
+                     <div class="ui-checkbox">
+                         <input name="checkbox-v-7" id="vendebien" type="checkbox">
+                          <label for="vendebien">¿Lo vende bien?</label>
+                     </div>
+                     <br/>
+
+
+                     
+                  </fieldset>
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Seguridad en lo que expone:</legend>
+                      <input name="radio-choice-h-3" id="radio-choice-h-11" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-11">Mala</label>
+
+                      <input name="radio-choice-h-3" id="radio-choice-h-12" value="on"  type="radio">
+                      <label for="radio-choice-h-12">Regular</label>
+
+                       <input name="radio-choice-h-3" id="radio-choice-h-13" value="on" type="radio">
+                      <label for="radio-choice-h-13">Normal</label>
+
+                       <input name="radio-choice-h-3" id="radio-choice-h-14" value="on" type="radio">
+                      <label for="radio-choice-h-14">Bien</label>
+                       <input name="radio-choice-h-3" id="radio-choice-h-15" value="on" type="radio">
+                      <label for="radio-choice-h-15"> Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Presentación trabajada (PowerPoint):</legend>
+                      <input name="radio-choice-h-4" id="radio-choice-h-16" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-16">Mala</label>
+
+                      <input name="radio-choice-h-4" id="radio-choice-h-17" value="on"  type="radio">
+                      <label for="radio-choice-h-17">Regular</label>
+
+                       <input name="radio-choice-h-4" id="radio-choice-h-18" value="on" type="radio">
+                      <label for="radio-choice-h-18">Normal</label>
+
+                       <input name="radio-choice-h-4" id="radio-choice-h-19" value="on" type="radio">
+                      <label for="radio-choice-h-19">Bien</label>
+                       <input name="radio-choice-h-4" id="radio-choice-h-20" value="on" type="radio">
+                      <label for="radio-choice-h-20"> Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Entusiasmo en lo que expone:</legend>
+                       <input name="radio-choice-h-5" id="radio-choice-h-21" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-21">Mala</label>
+
+                      <input name="radio-choice-h-5" id="radio-choice-h-22" value="on"  type="radio">
+                      <label for="radio-choice-h-22">Regular</label>
+
+                       <input name="radio-choice-h-5" id="radio-choice-h-23" value="on" type="radio">
+                      <label for="radio-choice-h-23">Normal</label>
+
+                       <input name="radio-choice-h-5" id="radio-choice-h-24" value="on" type="radio">
+                      <label for="radio-choice-h-24">Bien</label>
+                       <input name="radio-choice-h-5" id="radio-choice-h-25" value="on" type="radio">
+                      <label for="radio-choice-h-25"> Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+                  <fieldset data-role="controlgroup">
+                      <legend>Expresión oral:</legend>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-8" id="entonacion" type="checkbox">
+                          <label for="entonacion">Entonación correcta</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-9" id="volumen" type="checkbox">
+                          <label for="volumen">Volumen adecuado</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-10" id="velocidad" type="checkbox">
+                          <label for="velocidad">Velocidad adecuada</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-11" id="vacilacion" type="checkbox">
+                          <label for="vacilacion">Ausencia de vacilación en la voz</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-12" id="pausas" type="checkbox">
+                          <label for="pausas">Pausas correctas</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-13" id="muletillas" type="checkbox">
+                          <label for="muletillas">Ausencia de muletillas</label>
+                        </div>
+                        <br/>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Duración:</legend>
+                      <input name="radio-choice-h-6" id="radio-choice-h-26" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-26"> Escasa</label>
+                      <input name="radio-choice-h-6" id="radio-choice-h-27" value="on" type="radio">
+                      <label for="radio-choice-h-27"> Correcta</label>
+                      <input name="radio-choice-h-6" id="radio-choice-h-28" value="on" type="radio">
+                      <label for="radio-choice-h-28"> Muy Extensa</label>
+                      <br/><br/> <br/>
+                  </fieldset>
+
+
+                  <fieldset data-role="controlgroup" >
+                      <legend>Lenguaje no verbal:</legend>
+                      <div class="ui-checkbox">
+                         <input name="checkbox-v-14" id="miradaasala" type="checkbox">
+                          <label for="miradaasala">Mirada correcta hacia el auditorio</label>
+                        </div>
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-15" id="expresionfacial" type="checkbox">
+                          <label for="expresionfacial">Sonrisa/Expresión facial positiva</label>
+                        </div>
+
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-16" id="posicioncorrec" type="checkbox">
+                          <label for="posicioncorrec">Posición correcta del cuerpo</label>
+                        </div>
+                        <div class="ui-checkbox">
+                         <input name="checkbox-v-17" id="ausenciadetic" type="checkbox">
+                          <label for="ausenciadetic">Ausencia de tics/gestos nerviosos</label>
+                        </div>
+                        <br/>
+                  </fieldset>
+
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>Capacidad de atraer la atención del público:</legend>
+                       <input name="radio-choice-h-7" id="radio-choice-h-29" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-29">Mala</label>
+
+                      <input name="radio-choice-h-7" id="radio-choice-h-30" value="on"  type="radio">
+                      <label for="radio-choice-h-30">Regular</label>
+
+                       <input name="radio-choice-h-7" id="radio-choice-h-31" value="on" type="radio">
+                      <label for="radio-choice-h-31">Normal</label>
+
+                       <input name="radio-choice-h-7" id="radio-choice-h-32" value="on" type="radio">
+                      <label for="radio-choice-h-32">Bien</label>
+                       <input name="radio-choice-h-7" id="radio-choice-h-33" value="on" type="radio">
+                      <label for="radio-choice-h-33"> Muy bien</label>
+                      </br></br></br>
+                  </fieldset>
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                      <legend>¿Responde preguntas de forma coherente?</legend>
+                      <input name="radio-choice-h-8" id="radio-choice-h-34" value="on" checked="checked" type="radio">
+                      <label for="radio-choice-h-34">No</label>
+
+                      <input name="radio-choice-h-8" id="radio-choice-h-35" value="on"  type="radio">
+                      <label for="radio-choice-h-35">Si</label>
+                  </fieldset>
+                  <div> 
+                    <a data-role="button" href="#calificaciones" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-action">Calificar Alumno</a>
+                    <a data-role="button" href="#alumnos" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">Seleccionar Alumno</a>
+                    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Seleccionar Curso</a>
+                    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
+                  </div>
+                 
+              </div>
+          </div>
+      
+  </div>
+
+
+</div>
+</div>
+
+<div data-role="page" id="calificaciones" class="ui-page ui-body-c" data-add-back-btn="”true”" data-url="calificaciones" tabindex="0">
+    <!-- Cabecera -->
+    <header data-role="header">
+        <h1>Calificaciones</h1>
+    </header>
+
+    <div class="wrap" data-role="content" id="calificaciones" class="box">
+        <div class="boxBody">
+            <div class="ui-field-contain">
+
+                <fieldset data-role="controlgroup">
+                    <legend>Contenido del proyeto: </legend>
+                    <input name="contenido" id="contenido" placeholder="Max: 6.5" type="number" step="any" max="6.5">
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Calidad de la presentacion:</legend>
+                    <input name="calidad" id="calidad" type="number" placeholder="Max: 1" step="any" min="0" max="1">
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Expresion Oral:</legend>
+                    <input name="expresionoral" id="expresionoral" placeholder="Max: 2.5" type="number" step="any" min="0" max="2.5">
+                </fieldset>
+                <div> 
+                    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-action">Enviar Nota</a>
+                    <a data-role="button" href="#alumnos" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">Seleccionar Alumno</a>
+                    <a data-role="button" href="#curso" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Seleccionar Curso</a>
+                    <a data-role="button" href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Salir de la aplicación</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
 
 </body>
 
