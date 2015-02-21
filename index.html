@@ -3,6 +3,7 @@
 <head>
  <meta charset="utf-8">
  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+ <link rel="stylesheet" href="css/main.css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="script/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -42,10 +43,10 @@
    
     <div data-corners="true">
          
-        <ul data-role="listview" data-filter="true" >
-            <li><a href="#ComercioYmarqueting">Comercio y Marketing</a></li>
-            <li><a href="#ImagenySonido">Imagen y Sonido</a></li>
-            <li><a href="#InformaticayComunicaciones">Informática y Comunicaciones</a></li>
+        <ul data-role="listview" data-filter="true" id="listas" data-filter-placeholder="Buscar modulo">
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#ComercioYmarqueting">Comercio y Marketing</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#ImagenySonido">Imagen y Sonido</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"> <a href="#InformaticayComunicaciones">Informática y Comunicaciones</a></li>
 
         </ul>
 
@@ -66,12 +67,12 @@
     <div  data-corners="false" data-theme="b" data-content-theme="b">
      
     
-        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
-            <li><a href="#alumnos">Actividades Comerciales</a></li>
-            <li><a href="#alumnos">Comercio</a></li>
-            <li><a href="#alumnos">Comercio Internacional</a></li>
-             <li><a href="#alumnos">Gestión de ventas y espacios comerciales</a></li>
-            <li><a href="#alumnos">Transporte y Logística</a></li>
+        <ul data-role="listview" data-filter="true" id="listas" data-filter-placeholder="Buscar curso">
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Actividades Comerciales</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Comercio</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Comercio Internacional</a></li>
+             <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Gestión de ventas y espacios comerciales</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Transporte y Logística</a></li>
         </ul>
     
 
@@ -93,13 +94,13 @@
     <div  data-corners="false" data-theme="b" data-content-theme="b">
      
     
-        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
-            <li><a href="#alumnos">Laboratorio de Imagen</a></li>
-            <li><a href="#alumnos">Video Disc-Jockey y Sonido</a></li>
-            <li><a href="#alumnos">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
-             <li><a href="index.php">ILuminación, Captación y Tratamiento de Imagen</a></li>
-            <li><a href="#alumnos">Producción de Audiovisuales y Espectáculos</a></li>
-             <li><a href="#alumnos">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
+        <ul data-role="listview" data-filter="true" id="listas" data-filter-placeholder="Buscar curso">
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Laboratorio de Imagen</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Video Disc-Jockey y Sonido</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
+             <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="index.php">ILuminación, Captación y Tratamiento de Imagen</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Producción de Audiovisuales y Espectáculos</a></li>
+             <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
 
         </ul>
     
@@ -123,11 +124,11 @@
     <div data-corners="false" data-theme="b" data-content-theme="b">
      
     
-        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
-            <li><a href="#alumnos">Sistemas Microinformáticos y Redes</a></li>
-            <li><a href="#alumnos">Administración de SIstemas Informáticos en Red</a></li>
-            <li><a href="#alumnos">Desarrollo de Aplicaciones Multiplataforma</a></li>
-            <li><a href="#alumnos">Desarrollo de Aplicaciones Web</a></li>
+        <ul data-role="listview" data-filter="true" id="listas" data-filter-placeholder="Buscar curso">
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Sistemas Microinformáticos y Redes</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Administración de SIstemas Informáticos en Red</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Desarrollo de Aplicaciones Multiplataforma</a></li>
+            <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#alumnos">Desarrollo de Aplicaciones Web</a></li>
         </ul>
     
 
@@ -145,20 +146,21 @@
     <header data-role="header" >
         <h2>Lista de Alumnos</h2>
     </header>
-    <div data-theme="a" data-content-theme="b">
-    <div >
+    <div data-role="main" class="ui-content">
+    <div data-corners="false" data-theme="b" data-content-theme="b">
     
-        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
-             <li><a href="index.php">pepe</a></li>
-        <li><a href="#evaluar">juan</a></li>
-        <li><a href="#evaluar">carla</a></li>
-        <li><a href="#evaluar">penelope</a></li>
-        <li><a href="#evaluar">Chrystofer</a></li>
-        <li><a href="#evaluar">daniel</a></li>
-        <li><a href="#evaluar">faviana</a></li>
-        <li><a href="#evaluar">fernando</a></li>
-        <li><a href="#evaluar">gabriel</a></li>
-        <li><a href="#evaluar">helena</a></li>
+        <ul data-role="listview" data-filter="true" id="listas" data-filter-placeholder="Buscar alumno" >
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="index.php">pepe</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">juan</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">carla</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">penelope</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">Chrystofer</a></li>
+          <li id="listas1" class="u
+          i-btn ui-shadow ui-corner-all"><a href="#evaluar">daniel</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">faviana</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">fernando</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">gabriel</a></li>
+          <li id="listas1" class="ui-btn ui-shadow ui-corner-all"><a href="#evaluar">helena</a></li>
         </ul>
     </div>
     
